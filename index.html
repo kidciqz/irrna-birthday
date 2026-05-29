@@ -13,17 +13,19 @@
 <div class="lock-screen" id="lockScreen">
     <div class="glass-card">
         <h1>For Nur Jay Irrna ❤️</h1>
-        <p class="hint">Hint: your birthday </p>
+        <p class="hint">Hint: your birthday (e.g., 2905)</p>
         <input type="password" id="password" placeholder="Enter password">
         <button onclick="checkPassword()">Enter My Heart ✨</button>
-        <p id="error"></p>
+        <p id="error" style="color: red; margin-top: 10px;"></p>
     </div>
 </div>
 
+<!-- The hidden class should be styled in your CSS as: .hidden { display: none; } -->
 <div id="mainContent" class="hidden">
 
+    <!-- Corrected audio path -->
     <audio id="bgMusic" loop>
-        <source src="music/Justin Bieber - Favorite Girl .mp3" type="audio/mpeg">
+        <source src="music.mp3" type="audio/mpeg">
     </audio>
 
     <section class="hero">
