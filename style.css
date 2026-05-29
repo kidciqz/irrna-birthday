@@ -1,0 +1,153 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(180deg,#fdf2f8,#ffe4e6);
+    color:#333;
+    overflow-x:hidden;
+}
+
+.hidden{
+    display:none;
+}
+
+#stars{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-image:radial-gradient(white 1px, transparent 1px);
+    background-size:50px 50px;
+    opacity:0.2;
+    z-index:-1;
+}
+
+.lock-screen{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.glass-card{
+    background:rgba(255,255,255,0.25);
+    padding:40px;
+    border-radius:25px;
+    backdrop-filter:blur(15px);
+    text-align:center;
+    width:90%;
+    max-width:400px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.15);
+}
+
+.glass-card input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    margin-top:15px;
+}
+
+.glass-card button{
+    margin-top:15px;
+    padding:12px 20px;
+    border:none;
+    border-radius:12px;
+    background:#ff7aa2;
+    color:white;
+    cursor:pointer;
+}
+
+.hero{
+    position:relative;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero-img{
+    width:90%;
+    max-width:500px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.hero-text{
+    margin-top:20px;
+}
+
+.hero-text h1{
+    font-size:3rem;
+    color:#ff4f81;
+}
+
+.gallery-section,
+.love-letter,
+.countdown-section,
+.coupon,
+.game{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.gallery{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    padding-top:20px;
+}
+
+.gallery img{
+    width:300px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.love-letter p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+#countdown{
+    font-size:2rem;
+    margin-top:20px;
+    color:#ff4f81;
+}
+
+.gift-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 25px;
+    background:#ff7aa2;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+}
+
+footer{
+    padding:40px;
+    text-align:center;
+    font-size:1.2rem;
+}
+
+.floating-heart{
+    position:fixed;
+    color:#ff7aa2;
+    animation:float 5s linear forwards;
+    font-size:24px;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-100vh);
+        opacity:0;
+    }
+}

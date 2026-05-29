@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Irrna ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="stars"></div>
+
+<div class="lock-screen" id="lockScreen">
+    <div class="glass-card">
+        <h1>For Nur Jay Irrna ❤️</h1>
+        <p class="hint">Hint: your birthday + 300597</p>
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Enter My Heart ✨</button>
+        <p id="error"></p>
+    </div>
+</div>
+
+<div id="mainContent" class="hidden">
+
+    <audio id="bgMusic" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8b0d6d4df.mp3?filename=romantic-sentimental-background-music-11054.mp3" type="audio/mpeg">
+    </audio>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <img src="images/photo1.jpeg" class="hero-img">
+        <div class="hero-text">
+            <h1>Happy Birthday Irrna ❤️</h1>
+            <p id="typing"></p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h2>Our Memories ✨</h2>
+        <div class="gallery">
+            <img src="images/photo1.jpeg">
+            <img src="images/photo2.jpeg">
+            <img src="images/photo3.jpeg">
+        </div>
+    </section>
+
+    <section class="love-letter">
+        <h2>A Message For You 💌</h2>
+        <p>
+        Happy Birthday to my beautiful Irrna. Today is your special day, and I want to take a moment to remind you just how incredibly much you mean to me.
+        <br><br>
+        I know our journey hasn't always been easy. The distance between us can feel so heavy, and the sacrifices we are making right now really test our strength.
+        But every hardship we face proves how strong our bond truly is.
+        <br><br>
+        My greatest prayer is that God eases our journey ahead so we can finally close this distance for good.
+        Every difficult step today is leading us to a beautiful future together ❤️
+        </p>
+    </section>
+
+    <section class="countdown-section">
+        <h2>Time Since We Met ⏳</h2>
+        <div id="countdown"></div>
+    </section>
+
+    <section class="coupon">
+        <h2>Your Birthday Gift ☕</h2>
+        <p>A small little treat for my favorite person ❤️</p>
+        <a href="#" class="gift-btn">Claim Your ZUS Drink 🎁</a>
+    </section>
+
+    <section class="game">
+        <h2>Mini Game 🎮</h2>
+        <p>Catch the hearts ❤️</p>
+        <button onclick="spawnHeart()">Tap Heart</button>
+        <div id="score">Score: 0</div>
+    </section>
+
+    <footer>
+        <p>I love you today, tomorrow, and forever ❤️</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
