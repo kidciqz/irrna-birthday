@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(180deg, #fdf2f8, #ffe4e6); /* Your new dreamy background */
+    background: linear-gradient(180deg, #fdf2f8, #ffe4e6);
     color: #333;
     overflow-x: hidden;
 }
@@ -15,7 +15,7 @@ body {
     display: none !important;
 }
 
-/* Your amazing starry background effect */
+/* --- STARS BACKGROUND --- */
 #stars {
     position: fixed;
     width: 100%;
@@ -69,7 +69,7 @@ body {
     font-weight: bold;
 }
 
-/* --- MAIN CONTENT LAYOUT (Restored to keep it centered) --- */
+/* --- MAIN CONTENT LAYOUT --- */
 #mainContent {
     max-width: 800px;
     margin: 0 auto; 
@@ -95,7 +95,7 @@ body {
 .hero-text h1 { font-size: 2.5rem; color: #ff4f81; margin-bottom: 10px; }
 #typing { font-size: 1.2em; color: #555; min-height: 30px; }
 
-/* --- GALLERY SECTION (Restored the neat uniform grid) --- */
+/* --- GALLERY SECTION --- */
 .gallery-section, .love-letter, .countdown-section, .coupon, .game {
     padding: 40px 20px;
     text-align: center;
@@ -110,7 +110,7 @@ body {
 .gallery {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Makes them drop to next line nicely */
+    flex-wrap: wrap; 
     gap: 20px;
     padding-top: 20px;
 }
@@ -118,7 +118,7 @@ body {
 .gallery img {
     width: 220px;
     height: 280px;
-    object-fit: cover; /* Prevents squishing! */
+    object-fit: cover; 
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -143,170 +143,9 @@ body {
     border: none;
     cursor: pointer;
     font-size: 1rem;
-}
-
-footer { padding: 40px; text-align: center; font-size: 1.1rem; color: #ff4f81; font-weight: bold; }
-
-/* --- FLOATING HEARTS ANIMATION --- */
-.floating-heart {
-    position: fixed;
-    color: #ff7aa2;
-    animation: float 5s linear forwards;
-    font-size: 24px;
-    pointer-events: none;
-    z-index: 9999;
-}
-
-@keyframes float {
-    from { transform: translateY(0) scale(1); opacity: 1; }
-    to { transform: translateY(-100vh) scale(1.5); opacity: 0; }
-}* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background: linear-gradient(180deg, #fdf2f8, #ffe4e6); /* Your new dreamy background */
-    color: #333;
-    overflow-x: hidden;
-}
-
-.hidden {
-    display: none !important;
-}
-
-/* Your amazing starry background effect */
-#stars {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(white 1px, transparent 1px);
-    background-size: 50px 50px;
-    opacity: 0.2;
-    z-index: -1;
-}
-
-/* --- LOCK SCREEN --- */
-.lock-screen {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.glass-card {
-    background: rgba(255, 255, 255, 0.25);
-    padding: 40px;
-    border-radius: 25px;
-    backdrop-filter: blur(15px);
-    text-align: center;
-    width: 90%;
-    max-width: 400px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-}
-
-.glass-card h1 { color: #ff4f81; margin-bottom: 10px; }
-.hint { font-size: 0.9em; color: #666; margin-bottom: 20px; }
-
-.glass-card input {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 12px;
-    margin-top: 15px;
-    outline: none;
-    text-align: center;
-}
-
-.glass-card button {
-    margin-top: 15px;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 12px;
-    background: #ff7aa2;
-    color: white;
-    cursor: pointer;
     font-weight: bold;
 }
 
-/* --- MAIN CONTENT LAYOUT (Restored to keep it centered) --- */
-#mainContent {
-    max-width: 800px;
-    margin: 0 auto; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hero {
-    position: relative;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.hero-img {
-    width: 90%;
-    max-width: 320px;
-    border-radius: 25px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.hero-text { margin-top: 20px; }
-.hero-text h1 { font-size: 2.5rem; color: #ff4f81; margin-bottom: 10px; }
-#typing { font-size: 1.2em; color: #555; min-height: 30px; }
-
-/* --- GALLERY SECTION (Restored the neat uniform grid) --- */
-.gallery-section, .love-letter, .countdown-section, .coupon, .game {
-    padding: 40px 20px;
-    text-align: center;
-    width: 100%;
-}
-
-.gallery-section h2, .love-letter h2, .countdown-section h2, .coupon h2, .game h2 {
-    color: #ff4f81;
-    margin-bottom: 20px;
-}
-
-.gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Makes them drop to next line nicely */
-    gap: 20px;
-    padding-top: 20px;
-}
-
-.gallery img {
-    width: 220px;
-    height: 280px;
-    object-fit: cover; /* Prevents squishing! */
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.love-letter p {
-    max-width: 700px;
-    margin: auto;
-    line-height: 1.8;
-    color: #444;
-}
-
-#countdown { font-size: 1.5rem; margin-top: 20px; color: #ff4f81; font-weight: bold; }
-
-.gift-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 25px;
-    background: #ff7aa2;
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
 footer { padding: 40px; text-align: center; font-size: 1.1rem; color: #ff4f81; font-weight: bold; }
 
 /* --- FLOATING HEARTS ANIMATION --- */
@@ -322,4 +161,53 @@ footer { padding: 40px; text-align: center; font-size: 1.1rem; color: #ff4f81; f
 @keyframes float {
     from { transform: translateY(0) scale(1); opacity: 1; }
     to { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+}
+
+/* --- ZUS COUPON POP-UP (MODAL) --- */
+.modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; 
+}
+
+.hidden-modal {
+    display: none !important;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    max-width: 85%;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: popIn 0.3s ease-out;
+}
+
+.modal-content h2 { color: #003366; margin-bottom: 15px; }
+
+.zus-img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff4f81;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.close-btn:hover { color: #c2185b; }
+
+@keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
