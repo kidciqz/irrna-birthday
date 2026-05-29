@@ -10,6 +10,11 @@
 
 <div id="stars"></div>
 
+<!-- Audio tag moved OUTSIDE the hidden div, with temporary controls for testing -->
+<audio id="bgMusic" loop controls style="position: absolute; top: 10px; left: 10px; z-index: 10000;">
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
 <div class="lock-screen" id="lockScreen">
     <div class="glass-card">
         <h1>For Nur Jay Irrna ❤️</h1>
@@ -22,11 +27,6 @@
 
 <!-- The hidden class should be styled in your CSS as: .hidden { display: none; } -->
 <div id="mainContent" class="hidden">
-
-    <!-- Corrected audio path -->
-    <audio id="bgMusic" loop>
-        <source src="music.mp3" type="audio/mpeg">
-    </audio>
 
     <section class="hero">
         <div class="overlay"></div>
