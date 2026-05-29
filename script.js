@@ -50,7 +50,7 @@ function startHearts(){
     },500);
 }
 
-const meetDate = new Date("2023-01-01");
+const meetDate = new Date("2023-03-04");
 
 function updateCountdown(){
     const now = new Date();
