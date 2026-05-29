@@ -27,8 +27,7 @@
 <div id="mainContent" class="hidden">
 
     <section class="hero">
-        <div class="overlay"></div>
-        <img src="photo3.jpeg" class="hero-img">
+        <img src="photo1.jpeg" class="hero-img">
         <div class="hero-text">
             <h1>Happy Birthday Irrna ❤️</h1>
             <p id="typing"></p>
@@ -65,17 +64,26 @@
     <section class="coupon">
         <h2>Your Birthday Gift ☕</h2>
         <p>A small little treat for my favorite person ❤️</p>
-        <a href="#" class="gift-btn">Claim Your ZUS Drink 🎁</a>
+        <button class="gift-btn" onclick="showCoupon()">Claim Your ZUS Drink 🎁</button>
     </section>
+
+    <div id="couponModal" class="modal hidden-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeCoupon()">&times;</span>
+            <h2>Happy Birthday! 🎉</h2>
+            <img src="zus.jpg" alt="ZUS Coupon" class="zus-img">
+            <p style="font-size: 0.9em; color: #444;">Screenshot this and show it to me for your treat! ☕❤️</p>
+        </div>
+    </div>
 
     <section class="game">
         <h2>Mini Game 🎮</h2>
         <p>Catch the hearts ❤️</p>
-        <button onclick="spawnHeart()">Tap Heart</button>
-        <div id="score">Score: 0</div>
+        <button class="gift-btn" onclick="spawnHeart()">Tap Heart</button>
+        <div id="score" style="margin-top: 15px; font-size: 1.2rem; font-weight: bold; color: #ff4f81;">Score: 0</div>
     </section>
 
-    <footer>
+    <footer style="margin-top: 40px; padding-bottom: 20px; color: #ff4f81; font-weight: bold; font-size: 1.1rem;">
         <p>I love you today, tomorrow, and forever ❤️</p>
     </footer>
 
